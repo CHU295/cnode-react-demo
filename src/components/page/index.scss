@@ -1,0 +1,19 @@
+.pagination {
+  height: 40px;
+  margin: 10px 0 0 10px;
+  ul {
+    padding: 0;
+    margin: 0 0 10px 25px;
+    list-style-type: none;
+    li {
+    	display: inline;
+    	float: left;
+	    padding: 4px 12px;
+	    line-height: 20px;
+	    text-decoration: none;
+	    background-color: #fff;
+	    border: 1px solid #ddd;
+	    border-left-width: 0;
+    }
+  }
+}

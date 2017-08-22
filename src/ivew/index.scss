@@ -1,0 +1,18 @@
+body {
+	background: #e1e1e1;
+	font-size: 14px;
+}
+.contain {
+	max-width: 1400px;
+	min-width: 960px;
+	margin: 0 auto;
+	.right {
+		width: 290px;
+		font-size: 14px;
+		float: right;
+		margin-bottom: 20px;
+	}
+	.left {
+		margin-right: 305px;
+	}
+}

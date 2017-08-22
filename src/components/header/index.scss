@@ -1,0 +1,21 @@
+.header-contain {
+	background: #444;
+	height: 50px;
+	width: 100%;
+	color: #ccc;
+	.navbar {
+		max-width: 1400px;
+		min-width: 960px;
+		margin: 0 auto;
+		.brand {
+			width: 120px;
+			padding: 3px 20px;
+			height: 28px;
+			display: block;
+			img {
+				width: 100%;
+			}
+		}
+		
+	}
+}
