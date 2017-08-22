@@ -23,6 +23,9 @@ class page extends Component {
 			    onClick={()=>this.props.changePage('',(this.props.pageNum-1))}
 			    >«</li>
 			    {
+			    	this.props.pageNum >3 ? <li>...</li>:''
+			    }
+			    {
 			    	this.props.pageNum == 1 ?
 				    	(
 				    		i.map(num=>(
@@ -33,7 +36,6 @@ class page extends Component {
 				    				    	)
 				    		)):this.props.pageNum == 2 ?
 						    		(
-						    			
 						    			i.map(num=>(
 						    				    		<li key={num} 
 						    				    		onClick={()=>this.props.changePage('',(this.props.pageNum+num-2))}
@@ -41,16 +43,23 @@ class page extends Component {
 						    				    		>
 						    				    		{this.props.pageNum+num-2}</li>
 						    				    	)
-						    		)):(
-						    					
-						    					i.map(num=>(
+						    		)):this.props.pageNum == 3 ?
+						    					(i.map(num=>(
 						    						    		<li key={num} 
 						    						    		onClick={()=>this.props.changePage('',(this.props.pageNum+num-3))}
 						    						    		style={(this.props.pageNum+num-3)==this.props.pageNum?{color:'#80bd01'}:{}}
 						    						    		>
 						    						    		{this.props.pageNum+num-3}</li>
 						    						    	)
-						    				))
+						    				)):(i.map(num=>(
+						    						    		<li key={num} 
+						    						    		onClick={()=>this.props.changePage('',(this.props.pageNum+num-3))}
+						    						    		style={(this.props.pageNum+num-3)==this.props.pageNum?{color:'#80bd01'}:{}}
+						    						    		>
+						    						    		{this.props.pageNum+num-3}</li>
+						    						    	)
+						    						))
+
 			    }
 			    <li>...</li>
 			    <li 
