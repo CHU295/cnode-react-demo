@@ -19,12 +19,17 @@ class List extends Component {
 				tab:tab,
 				number:number
 			})
+		this.getList()
+	}
+
+	componentDidUpdate (a,b) {
+		console.log(a,b)
+		// if (a.number!=b.number) {
+		// 	this.getList()
+		// }
 	}
 
 	getList() {
-		let data = {
-			number: this.state.number
-		}
 		axios.get('https://cnodejs.org/api/v1/topics?tab='+this.state.tab+'&page='+this.state.number).then(res=>{
 			this.setState({
 				list:res.data.data
@@ -53,7 +58,7 @@ class List extends Component {
 					))
 					}
 				</div>
-				<Page changePage={this.changePage.bind(this)}/>
+				<Page changePage={this.changePage.bind(this)} pageNum={this.state.number}/>
 			</div>
 		);
 	}

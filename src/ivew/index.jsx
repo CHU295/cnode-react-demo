@@ -17,7 +17,6 @@ class Chu extends Component {
 		this.setState({
 			listData: val
 		})
-		console.log('listData:'+this.state.listData)
 	}
 
 	render () {
