@@ -1,6 +1,7 @@
 刚开始写，慢慢更新，慢慢爬坑
 
 npm i
+
 npm run start
 
 打开localhost:9999
