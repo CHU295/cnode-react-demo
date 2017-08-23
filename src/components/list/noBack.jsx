@@ -12,7 +12,7 @@ class NoBack extends Component {
 	componentWillReceiveProps(nextProps) {
 		let a = []
 		nextProps.listData.map(lis=>{
-			if (lis.reply_count==0 && a.length<=5) {
+			if (lis.reply_count==0 && a.length<5) {
 				a.push(lis)
 			}
 		})

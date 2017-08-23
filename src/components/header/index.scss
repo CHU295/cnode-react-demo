@@ -3,19 +3,51 @@
 	height: 50px;
 	width: 100%;
 	color: #ccc;
+	margin: 0 0 20px 0;
 	.navbar {
 		max-width: 1400px;
 		min-width: 960px;
 		margin: 0 auto;
+		padding-top: 5px;
 		.brand {
 			width: 120px;
 			padding: 3px 20px;
 			height: 28px;
 			display: block;
+			float: left;
 			img {
 				width: 100%;
 			}
 		}
-		
+		.pull-right {
+	    float: right;
+	    margin-right: 0;
+	    list-style: none;
+	    li {
+        float: left;
+        line-height: 20px;
+        display: list-item;
+        a {
+          text-shadow: none;
+          color: #ccc;
+          float: none;
+          padding: 10px 15px;
+          // color: #777;
+          text-decoration: none;
+          // text-shadow: 0 1px 0 #fff;
+          display: block;
+          &:hover {
+          	color: #fff;
+          }
+        }
+	    }
+		}
+		.nav {
+	    position: relative;
+	    left: 0;
+	    display: block;
+	    // float: left;
+	    margin: 0 10px 0 0;
+		}
 	}
 }

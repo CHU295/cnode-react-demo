@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import ReactDom from 'react-dom'
-import Chu from './ivew/index.jsx'
+import Basic from './route.js'
 
 ReactDom.render(
-	<Chu/>, 
+	<Basic />, 
 	document.getElementById('app')
 	)

@@ -18,8 +18,9 @@ class List extends Component {
 		this.setState({
 				tab:tab,
 				number:number
-			})
-		this.getList()
+			},()=>{
+				this.getList()
+			})		
 	}
 
 	componentDidUpdate (a,b) {

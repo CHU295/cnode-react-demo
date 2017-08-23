@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Header from '../components/header/index.jsx'
 import List from '../components/list/index.jsx'
 import NoBack from '../components/list/noBack.jsx'
 import Code from '../components/list/code.jsx'
@@ -22,7 +21,6 @@ class Chu extends Component {
 	render () {
 		return (
 			<div>
-				<Header />
 				<div className='contain'>
 					<div className='right'>
 						<NoBack listData={this.state.listData}/>

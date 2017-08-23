@@ -15,4 +15,67 @@ body {
 	.left {
 		margin-right: 305px;
 	}
+	.panel {
+		margin-bottom: 13px;
+		.header {
+	    padding: 10px;
+	    background-color: #f6f6f6;
+	    border-radius: 3px 3px 0 0;
+	    .breadcrumb {
+        padding: 0;
+        margin: 0;
+        border: none;
+        background: 0 0;
+        li {
+        	text-shadow: none;
+        	display: inline-block;
+        	line-height: 20px;
+        	a {
+      	    color: #80bd01;
+      	    text-decoration: none;
+        	}
+        	.divider {
+      	    padding: 0 5px;
+      	    color: #ccc;
+        	}
+        }
+      }
+		}
+		.inner {
+	    padding: 10px;
+	    border-radius: 0 0 3px 3px;
+	    padding: 10px;
+      border-top: 1px solid #e5e5e5;
+      background-color: #fff;
+      line-height: 2em;
+		}
+		.topic_content {
+	    margin: 0 10px;
+	    h2 {
+        margin-top: 0;
+        font-size: 26px;
+        margin: 30px 0 15px;
+        border-bottom: 1px solid #eee;
+        line-height: 40px;
+	    }
+	    p {
+        font-size: 15px;
+        line-height: 1.7em;
+        overflow: auto;
+        margin: 1em 0;
+        word-wrap: break-word;
+        display: block;
+        strong {
+          font-weight: 700;
+        }
+        a {
+          color: #08c;
+          text-decoration: none;
+        }
+	    }
+		}
+		.markdown-text>:first-child, .preview>:first-child {
+	    margin-top: 0;
+		}
+	}
 }
